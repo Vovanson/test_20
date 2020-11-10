@@ -1,0 +1,21 @@
+<div>
+    <h2>{{toDo.name | uppercase}} Details</h2>
+      <div #rendererContainer></div>
+    <div><span>id: </span>{{toDo.id}}</div>
+       
+
+    <div>
+      <label>name:
+        <input [(ngModel)]="toDo.name" placeholder="toDo.name"/>
+      </label>
+      <br>
+      <label>done%:
+        <input [(ngModel)]="toDo.done" placeholder="toDo.done"/>
+      </label>
+      
+    </div>
+    
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+
+</div>
